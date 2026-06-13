@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SOOP 채팅 통계</title>
+    <link rel="stylesheet" href="src/sidepanel.css" />
+  </head>
+  <body>
+    <main class="app-shell" aria-labelledby="app-title">
+      <header class="hero">
+        <img class="hero__logo" src="assets/logo.svg" alt="SOOP Live Chat Lader 로고" />
+        <div>
+          <p class="eyebrow">SOOP Live Chat Lader</p>
+          <h1 id="app-title">실시간 채팅 흐름을 한눈에</h1>
+        </div>
+      </header>
+
+      <section class="card" aria-labelledby="summary-title">
+        <div class="card__header">
+          <h2 id="summary-title">현재 방송 채팅 요약</h2>
+          <span class="status-badge">준비 중</span>
+        </div>
+        <p class="muted">
+          채팅량이 많은 숲 실시간 방송에서 반복되는 키워드와 흐름을 통계로 정리해 보여줄 예정입니다.
+        </p>
+      </section>
+
+      <section class="stats-grid" aria-label="채팅 통계 예시">
+        <article class="stat-card">
+          <span class="stat-card__label">분당 채팅</span>
+          <strong>0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-card__label">주요 키워드</span>
+          <strong>0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-card__label">감지 메시지</span>
+          <strong>0</strong>
+        </article>
+      </section>
+
+      <section class="card" aria-labelledby="keywords-title">
+        <h2 id="keywords-title">키워드 랭킹</h2>
+        <ol class="keyword-list" id="keyword-list">
+          <li class="keyword-list__empty">분석할 채팅을 기다리고 있습니다.</li>
+        </ol>
+      </section>
+    </main>
+    <script src="src/sidepanel.js" type="module"></script>
+  </body>
+</html>
