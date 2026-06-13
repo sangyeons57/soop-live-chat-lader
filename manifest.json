@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "SOOP Live Chat Lader",
+  "description": "숲 실시간 방송에서 채팅이 너무 많이 올라오는 방송인을 대상으로, 채팅을 통계화해 현재 어떤 채팅이 발생하고 있는지 알려주는 확장 프로그램입니다.",
+  "version": "0.1.0",
+  "icons": {
+    "16": "assets/logo.svg",
+    "32": "assets/logo.svg",
+    "48": "assets/logo.svg",
+    "128": "assets/logo.svg"
+  },
+  "action": {
+    "default_title": "SOOP 채팅 통계 열기"
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "permissions": [
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "https://www.sooplive.co.kr/*",
+    "https://play.sooplive.co.kr/*"
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}
